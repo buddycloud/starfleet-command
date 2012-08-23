@@ -27,11 +27,13 @@ function sfc_build_server() {
     cd buddycloud-server
     npm install .
     npm run-script install
+    cd ..
 }
 
 function sfc_build_client() {
     cd buddycloud-webclient
     ./configure
+    cd ..
 }
 
 function sfc_server() {

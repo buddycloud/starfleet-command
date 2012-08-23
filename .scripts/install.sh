@@ -76,13 +76,12 @@ EOF
     echo
     if [ ! -d "buddycloud-server" ]; then
         git clone $server_git_url buddycloud-server
-        cd buddycloud-server
     else
         cd buddycloud-server
         git pull origin master
+        cd ..
     fi
-    cd ..
-    sfc_build
+    sfc_build_server
 
     echo
     bold "Getting closer! Populating server DB..."
@@ -96,13 +95,12 @@ EOF
     echo
     if [ ! -d "buddycloud-webclient" ]; then
         git clone $webclient_git_url buddycloud-webclient
-        cd buddycloud-webclient
     else
         cd buddycloud-webclient
         git pull origin master
+        cd ..
     fi
-    ./configure
-    cd ..
+    sfc_build_client
 
     echo
     yellow "                ┌──────────────────────┒"
