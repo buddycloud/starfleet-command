@@ -124,6 +124,5 @@ function sfc_client() {
     bold "enterprise.sf: http://127.0.0.1:3000"
     bold "ds9.sf:        http://127.0.0.1:3001"
     bold "voyager.sf:    http://127.0.0.1:3002"
-    bold "You need to run ${LCYAN}chromium --disable-web-security${BOLD} to use the client!"
     wait
 }
