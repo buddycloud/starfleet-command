@@ -1,0 +1,4 @@
+buddycloud-server/
+buddycloud-webclient/
+.pid/
+log/
