@@ -26,7 +26,6 @@ EOF
 function sfc_build_server() {
     cd buddycloud-server
     npm install .
-    npm run-script install
     cd ..
 }
 
