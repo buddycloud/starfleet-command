@@ -29,12 +29,6 @@ function sfc_build_server() {
     cd ..
 }
 
-function sfc_build_client() {
-    cd buddycloud-webclient
-    ./configure
-    cd ..
-}
-
 function sfc_server() {
     function _start_prosody() {
         echo "Starting prosody..."
@@ -92,7 +86,13 @@ function sfc_server() {
     wait
 }
 
-function sfc_client() {
+function sfc_build_webclient() {
+    cd buddycloud-webclient
+    ./configure
+    cd ..
+}
+
+function sfc_webclient() {
     function _start_all() {
         # Prepare assets directories
         for server in enterprise ds9 voyager; do

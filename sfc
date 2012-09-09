@@ -21,7 +21,7 @@ source .scripts/main.sh
 sfc_logo
 
 case "$1" in
-    "install"|"clean_db"|"build_server"|"build_client"|"server"|"client")
+    "install"|"clean_db"|"build_server"|"server"|"build_webclient"|"webclient")
         sfc_$1
         ;;
     *)
@@ -30,10 +30,12 @@ case "$1" in
         echo -e "- ${BOLD}install${NORMAL} will set up everything you need to run your own buddycloud"
         echo -e "  federation: 3 instances of the server and of the web client."
         echo -e "- ${BOLD}clean_db${NORMAL} will empty the database for all the instances."
+        echo
         echo -e "- ${BOLD}build_server${NORMAL} will rebuild the buddycloud server (CoffeeScript --> JS)."
-        echo -e "- ${BOLD}build_client${NORMAL} will rebuild the buddycloud web client (configure script)."
         echo -e "- ${BOLD}server${NORMAL} will start the servers (Prosody + buddycloud)."
-        echo -e "- ${BOLD}client${NORMAL} will start the web client and display the URLs you can use to"
-        echo -e "  access them."
+        echo
+        echo -e "- ${BOLD}build_webclient${NORMAL} will rebuild the buddycloud web client."
+        echo -e "- ${BOLD}webclient${NORMAL} will start the web client and display the URLs you can use"
+        echo -e "  to access them."
         ;;
 esac

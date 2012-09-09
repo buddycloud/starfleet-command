@@ -100,7 +100,7 @@ EOF
         git pull origin master
         cd ..
     fi
-    sfc_build_client
+    sfc_build_webclient
 
     echo
     bold "If you let me download the new web client, I'll give you some cake."
