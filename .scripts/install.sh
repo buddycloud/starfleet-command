@@ -125,6 +125,12 @@ EOF
     fi
 
     echo
+    bold "One last thing: we'll need a simple web server to serve the HTTP API and"
+    bold "the new web client."
+    echo
+    npm install http-server
+
+    echo
     yellow "                ┌──────────────────────┒"
     yellow "                │                      ┃"
     yellow "                │   Congratulations!   ┃"

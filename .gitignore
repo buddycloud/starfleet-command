@@ -2,6 +2,9 @@ buddycloud-http-api
 buddycloud-server/
 buddycloud-webclient/
 webclient/
+
 .pid/
 log/
+node_modules/
+
 config
