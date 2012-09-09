@@ -123,6 +123,7 @@ EOF
         git pull origin master
         cd ..
     fi
+    sfc_build_http_api
 
     echo
     bold "One last thing: we'll need a simple web server to serve the HTTP API and"

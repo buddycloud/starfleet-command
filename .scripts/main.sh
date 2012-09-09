@@ -125,3 +125,17 @@ function sfc_webclient() {
     bold "voyager.sf:    http://127.0.0.1:3002"
     wait
 }
+
+function sfc_build_http_api() {
+    cd buddycloud-http-api
+    npm install .
+    [[ -e config.js ]] && rm config.js
+    ln -s ../.cfg/http_api.js config.js
+    cd ..
+}
+
+function sfc_http_api() {
+    cd buddycloud-http-api
+    NODE_ENV=enterprise npm start
+    cd ..
+}

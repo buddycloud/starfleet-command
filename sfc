@@ -21,7 +21,7 @@ source .scripts/main.sh
 sfc_logo
 
 case "$1" in
-    "install"|"clean_db"|"build_server"|"server"|"build_webclient"|"webclient")
+    "install"|"clean_db"|"build_server"|"server"|"build_webclient"|"webclient"|"build_http_api"|"http_api")
         sfc_$1
         ;;
     *)
@@ -37,5 +37,8 @@ case "$1" in
         echo -e "- ${BOLD}build_webclient${NORMAL} will rebuild the buddycloud web client."
         echo -e "- ${BOLD}webclient${NORMAL} will start the web client and display the URLs you can use"
         echo -e "  to access them."
+        echo
+        echo -e "- ${BOLD}build_http_api${NORMAL} will rebuild the HTTP API server."
+        echo -e "- ${BOLD}http_api${NORMAL} will start the HTTP API server."
         ;;
 esac
