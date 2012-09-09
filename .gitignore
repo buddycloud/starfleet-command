@@ -1,5 +1,7 @@
+buddycloud-http-api
 buddycloud-server/
 buddycloud-webclient/
+webclient/
 .pid/
 log/
 config

@@ -103,6 +103,28 @@ EOF
     sfc_build_client
 
     echo
+    bold "If you let me download the new web client, I'll give you some cake."
+    echo
+    if [ ! -d "webclient" ]; then
+        git clone $webclient_git_url webclient
+    else
+        cd webclient
+        git pull origin master
+        cd ..
+    fi
+
+    echo
+    bold "The cake is a lie! I still need to download the HTTP API server."
+    echo
+    if [ ! -d "buddycloud-http-api" ]; then
+        git clone $buddycloud_http_api_git_url buddycloud-http-api
+    else
+        cd buddycloud-http-api
+        git pull origin master
+        cd ..
+    fi
+
+    echo
     yellow "                ┌──────────────────────┒"
     yellow "                │                      ┃"
     yellow "                │   Congratulations!   ┃"
