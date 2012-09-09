@@ -11,6 +11,11 @@
 # CONDITIONS OF ANY KIND, either express or implied. See the License for the
 # specific language governing permissions and limitations under the License.
 
+buddycloud_http_api_git_url=git://github.com/buddycloud/buddycloud-http-api.git
+buddycloud_server_git_url=git://github.com/buddycloud/buddycloud-server.git
+buddycloud_webclient_git_url=git://github.com/buddycloud/buddycloud-webclient.git
+webclient_git_url=git://github.com/buddycloud/webclient.git
+
 NORMAL="\033[0;0m"
 BOLD="\033[0;1m"
 

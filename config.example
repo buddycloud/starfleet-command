@@ -1,0 +1,8 @@
+# This is a bash file. Be careful!
+
+# URLs of Git repositories. If you'd prefer to run code from your own branch,
+# you can put its URL here.
+buddycloud_http_api_git_url=git://github.com/buddycloud/buddycloud-http-api.git
+buddycloud_server_git_url=git://github.com/buddycloud/buddycloud-server.git
+buddycloud_webclient_git_url=git://github.com/buddycloud/buddycloud-webclient.git
+webclient_git_url=git://github.com/buddycloud/webclient.git

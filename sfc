@@ -13,10 +13,10 @@
 # CONDITIONS OF ANY KIND, either express or implied. See the License for the
 # specific language governing permissions and limitations under the License.
 
-source config
 source .scripts/common.sh
 source .scripts/install.sh
 source .scripts/main.sh
+[[ -e config ]] && source config
 
 sfc_logo
 

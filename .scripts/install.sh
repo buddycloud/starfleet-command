@@ -75,7 +75,7 @@ EOF
     bold "Time to get serious... Let's build the buddycloud server!"
     echo
     if [ ! -d "buddycloud-server" ]; then
-        git clone $server_git_url buddycloud-server
+        git clone $buddycloud_server_git_url buddycloud-server
     else
         cd buddycloud-server
         git pull origin master
@@ -94,7 +94,7 @@ EOF
     bold "Almost there! Now building the web client..."
     echo
     if [ ! -d "buddycloud-webclient" ]; then
-        git clone $webclient_git_url buddycloud-webclient
+        git clone $buddycloud_webclient_git_url buddycloud-webclient
     else
         cd buddycloud-webclient
         git pull origin master
