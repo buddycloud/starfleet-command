@@ -87,7 +87,7 @@ EOF
     bold "Getting closer! Populating server DB..."
     echo
     for ship in enterprise ds9 voyager; do
-        psql -U sfc -d sfc_$ship < buddycloud-server/postgres.sql
+        psql -U sfc -d sfc_$ship < buddycloud-server/postgres/*.sql
     done
 
     echo
