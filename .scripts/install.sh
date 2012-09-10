@@ -126,8 +126,7 @@ EOF
     sfc_build_http_api
 
     echo
-    bold "One last thing: we'll need a simple web server to serve the HTTP API and"
-    bold "the new web client."
+    bold "One last thing: we'll need a simple web server for the new web client."
     echo
     npm install http-server
 
