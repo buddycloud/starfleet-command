@@ -12,9 +12,13 @@
 # specific language governing permissions and limitations under the License.
 
 buddycloud_http_api_git_url=git://github.com/buddycloud/buddycloud-http-api.git
+buddycloud_http_api_git_branch=master
 buddycloud_server_git_url=git://github.com/buddycloud/buddycloud-server.git
+buddycloud_server_git_branch=master
 buddycloud_webclient_git_url=git://github.com/buddycloud/buddycloud-webclient.git
+buddycloud_webclient_git_branch=master
 webclient_git_url=git://github.com/buddycloud/webclient.git
+webclient_git_branch=master
 
 NORMAL="\033[0;0m"
 BOLD="\033[0;1m"

@@ -75,10 +75,10 @@ EOF
     bold "Time to get serious... Let's build the buddycloud server!"
     echo
     if [ ! -d "buddycloud-server" ]; then
-        git clone $buddycloud_server_git_url buddycloud-server
+        git clone $buddycloud_server_git_url -b $buddycloud_server_git_branch buddycloud-server
     else
         cd buddycloud-server
-        git pull origin master
+        git pull origin $buddycloud_server_git_branch
         cd ..
     fi
     sfc_build_server
@@ -96,10 +96,10 @@ EOF
     bold "Almost there! Now building the web client..."
     echo
     if [ ! -d "buddycloud-webclient" ]; then
-        git clone $buddycloud_webclient_git_url buddycloud-webclient
+        git clone $buddycloud_webclient_git_url -b $buddycloud_webclient_git_branch buddycloud-webclient
     else
         cd buddycloud-webclient
-        git pull origin master
+        git pull origin $buddycloud_webclient_git_branch
         cd ..
     fi
     sfc_build_webclient
@@ -108,10 +108,10 @@ EOF
     bold "If you let me download the new web client, I'll give you some cake."
     echo
     if [ ! -d "webclient" ]; then
-        git clone $webclient_git_url webclient
+        git clone $webclient_git_url -b $webclient_git_branch webclient
     else
         cd webclient
-        git pull origin master
+        git pull origin $webclient_git_branch
         cd ..
     fi
 
@@ -119,10 +119,10 @@ EOF
     bold "The cake is a lie! I still need to download the HTTP API server."
     echo
     if [ ! -d "buddycloud-http-api" ]; then
-        git clone $buddycloud_http_api_git_url buddycloud-http-api
+        git clone $buddycloud_http_api_git_url -b $buddycloud_http_api_git_branch buddycloud-http-api
     else
         cd buddycloud-http-api
-        git pull origin master
+        git pull origin $buddycloud_http_api_git_branch
         cd ..
     fi
     sfc_build_http_api
