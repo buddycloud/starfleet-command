@@ -18,6 +18,7 @@ log     = {
 bosh_ports = {{ interface = "127.0.0.1"; port = 5280; }}
 consider_bosh_secure = true
 cross_domain_bosh = true
+allow_unencrypted_plain_auth = true
 
 -- enterprise.sf
 VirtualHost "enterprise.sf"
